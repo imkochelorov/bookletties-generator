@@ -1,3 +1,70 @@
+.title-wrapper {
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 120px;
+    font-weight: 600;
+    line-height: 1.25;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 40%;
+}
+.plain-wrapper {
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.25;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+.footer-wrapper {
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.25;
+
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+@media screen and (max-width: 1200px) {
+    .title-wrapper {
+        font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 1.25;
+    
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 40%;
+    }
+    .plain-wrapper {
+        font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.25;
+    
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+    .footer-wrapper {
+        font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.25;
+    
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+    }
+}
+
 .wrapper {
     position: fixed;
     top: 0;
@@ -18,45 +85,13 @@ span {
     width: max-content;
 }
 
-.title-wrapper {
-    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 120px;
-    font-weight: 600;
-    line-height: 1.25;
-
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 40%;
-}
-.title {
-    opacity: 0;
-    display: inline-block;
-}
-.plain-wrapper {
-    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.25;
-
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-}
 .plain {
     opacity: 0;
     display: inline-block;
 }
-.footer-wrapper {
-    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 1.25;
-
-    position: absolute;
-    right: 20px;
-    bottom: 10px;
+.title {
+    opacity: 0;
+    display: inline-block;
 }
 .footer {
     opacity: 0;
