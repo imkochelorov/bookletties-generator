@@ -9,29 +9,80 @@
 }
 
 .page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     height: 100%;
     scroll-snap-align: start;
 }
 
+span {
+    width: max-content;
+}
+
+.title-wrapper {
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 120px;
+    font-weight: 600;
+    line-height: 1.25;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 40%;
+}
+.title {
+    opacity: 0;
+    display: inline-block;
+}
+.plain-wrapper {
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.25;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+.plain {
+    opacity: 0;
+    display: inline-block;
+}
+.footer-wrapper {
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.25;
+
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+.footer {
+    opacity: 0;
+    display: inline-block;
+}
+
 #page1 {
-    background-color: #ff7a7a;
+    background-color: #DEE2A6;
 }
 
 #page2 {
-    background-color: #f75990;
+    background-color: #D9BB84;
+    display: none;
 }
 
 #page3 {
-    background-color: #fff685;
+    background-color: #F28888;
+    display: none;
 }
 
 #page4 {
-    background-color: #00DDFF;
+    background-color: #F2A7A0;
+    display: none;
 }
 
 #page5 {
-    background-color: #0049B7;
+    background-color: #F2E2CE;
+    display: none;
 }
