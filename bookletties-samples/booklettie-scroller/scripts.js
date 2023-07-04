@@ -1,11 +1,14 @@
 Array.from(document.getElementsByClassName("title-wrapper")).forEach(title => {
+    title.style.display = "block";
     title.innerHTML = title.textContent.replace(/\S/g, "<span class='title'>$&</span>");
 });
-Array.from(document.getElementsByClassName("plain-wrapper")).forEach(title => {
-    title.innerHTML = title.textContent.replace(/\S/g, "<span class='plain'>$&</span>");
+Array.from(document.getElementsByClassName("plain-wrapper")).forEach(plain => {
+    plain.style.display = "block";
+    plain.innerHTML = plain.textContent.replace(/\S/g, "<span class='plain'>$&</span>");
 });
-Array.from(document.getElementsByClassName("footer-wrapper")).forEach(title => {
-    title.innerHTML = title.textContent.replace(/\S/g, "<span class='footer'>$&</span>");
+Array.from(document.getElementsByClassName("footer-wrapper")).forEach(footer => {
+    footer.style.display = "block";
+    footer.innerHTML = footer.textContent.replace(/\S/g, "<span class='footer'>$&</span>");
 });
 
 anime.timeline()
